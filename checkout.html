@@ -22,16 +22,147 @@
   </head>
   <body>
     <header>
-      <!-- header code omitted for brevity -->
+<!DOCTYPE html>
+<html lang="en">
+
+ 	<head>
+ 		<!-- Meta Tags -->
+		<meta charset="UTF-8">
+		<meta name="author" content="Kamran Mubarik">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Title -->
+ 		<title>E-Commerce Online Shop</title>
+ 		<!-- Style Sheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!-- Javascript -->	
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  		<script>
+		    $(document).ready(function(){
+		      $('.slider').bxSlider({
+				  auto: true,
+				  autoControls: true,
+				  stopAutoOnClick: true,
+				  pager: true
+				});
+		    });
+		 </script>
+ 	</head>
+<body>
+
+		<header>
+			  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<div class="container">
+			<div class="brand">
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/free-icon-billboard-10434383.png">
+						<div class="logo-text">
+							<p class="big-logo">Picture</p>
+							<p class="small-logo">Gallery</p>
+						</div>
+					</a>
+				</div> <!-- logo -->
+				<div class="shop-icon">
+					<div class="dropdown">
+						
+						<div class="dropdown-menu">
+							<ul>
+								<li><a href="account.html">My Account</a></li>
+								<li><a href="orders.html">My Orders</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="dropdown">
+						
+						<div class="dropdown-menu wishlist-item">
+							<table border="1">
+								<thead>
+									<tr>
+										<th>Image</th>
+										<th>Product Name</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="img/mona.jpg"></td>
+										<td>product name</td>
+									</tr>
+									<tr>
+										<td><img src="img/product/img2.jpg"></td>
+										<td>product name</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="dropdown">
+					
+						<div class="dropdown-menu cart-item">
+							<table border="1">
+								<thead>
+									<tr>
+										<th>Image</th>
+										<th>Product Name</th>
+										<th class="center">Price</th>
+										<th class="center">Qty.</th>
+										<th class="center">Amount</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="img/mona.jpg"></td>
+										<td>product name</td>
+										<td class="center">1200</td>
+										<td class="center">2</td>
+										<td class="center">2400</td>
+									</tr>
+									<tr>
+										<td><img src="img/product/img2.jpg"></td>
+										<td>product name</td>
+										<td class="center">1500</td>
+										<td class="center">2</td>
+										<td class="center">3000</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div> <!-- shop icons -->
+			</div> <!-- brand -->
+
+			<div class="menu-bar">
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><a class="active" href="checkout.html">Билеты</a></li>
+						<li><a href="about.html">Компания</a></li>
+						<li><a href="contact.html">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="search-bar">
+					<form>
+						
+					</form>
+				</div>
+			</div> <!-- menu -->
+		</div> <!-- container -->
+	</header> <!-- header -->
+
     </header>
 
-    <div class="container">
-      <main>
-        <h2>Покупка билетов</h2>
-        <div class="checkout-page">
+  <div class="container">
+		<main>
+			<div class="breadcrumb">
+				
+			</div> <!-- End of Breadcrumb-->
+
+			<h2>Покупка билетов</h2>
+			<div class="checkout-page">
           <div class="billing-detail">
            <form class="checkout-form" action="send_order.php" method="POST">
-              <h4>Детали доставки</h4>
+              <h4>Детали заказа</h4>
               <div class="form-inline">
                 <div class="form-group">
                   <label>Имя</label>
@@ -97,7 +228,7 @@
                     </li>
                     <li>Итого: <span id="total-price">700</span> ₽</li>
                     <hr>
-                    <li><input type="radio" name="payment" value="cash"> Наложенный платеж при доставке</li>
+                  
                     <li><input type="radio" id="easypaisa" name="payment" value="card"> Оплата картой</li>
                     <li>
                       <textarea id="easypaisaText" rows="5" disabled style="display:none;">Пожалуйста, внесите платеж на наш счет 030X-XXXXXXX после подтверждения платежа, пожалуйста, пришлите нам платежную квитанцию и идентификатор транзакции заказа по указанному выше номеру.</textarea>
@@ -113,10 +244,70 @@
         </div>
       </main>
     </div>
+<footer>
+		<div class="container">
+			<div class="footer-widget">
+				<div class="widget">
+					<div class="widget-heading">
+					<h3>Основные ссылки</h3>
+</div>
+<div class="widget-content">
+<ul>
+<li><a href="index.html">Главная</a></li>
+<li><a href="checkout.html">Билеты</a></li>
+<li><a href="about.html">Компания</a></li>
+<li><a href="contact.html">Контакты	</a></li>
+</ul>
+					</div>
+				</div>
+				<div class="widget">
+					<div class="widget-heading">
+						
+						</ul>
+					</div>
+				</div>
+				<div class="widget">
+					<div class="widget-heading">
+						<h3>Социальные сети</h3>
+					</div>
+					<div class="widget-content">
+						<div class="follow">
+							<ul>
+								<li><a href="#"><img src="img/icons/facebook.png"></a></li>
+								<li><a href="#"><img src="img/icons/twitter.png"></a></li>
+								<li><a href="#"><img src="img/icons/instagram.png"></a></li>
+							</ul>
+						</div>						
+					</div>
+					<div class="widget-heading">
+						<h3>Подпишитесь на рассылку новостей</h3>
+					</div>
+					<div class="widget-content">
+						<div class="subscribe">
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" name="subscribe" placeholder="Email">
+									<img src="img/icons/paper_plane.png">
+								</div>
+							</form>
+						</div>						
+					</div>
+				</div>
+			</div> <!-- Footer Widget -->
+			<div class="footer-bar">
+				<div class="copyright-text">
+					<p>Авторское право 2025 - Все права защищены</p>
+				</div>
+				<div class="payment-mode">
+					<img src="img/icons/paper_money.png">
+					<img src="img/icons/visa.png">
+					<img src="img/icons/mastercard.png">
+				</div>
+			</div> <!-- Footer Bar -->
+		</div>
+	</footer> <!-- Footer Area -->
 
-    <footer>
-      <!-- footer code omitted for brevity -->
-    </footer>
+
 
     <script>
       document.addEventListener('DOMContentLoaded', function () {

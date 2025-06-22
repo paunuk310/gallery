@@ -1,4 +1,47 @@
+/* Responsive adjustments */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin-top: 70px;
+}
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container, .brand, .logo, .row {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.slider, .slider img {
+  width: 100%;
+  height: auto;
+}
+
+.card, .product-box {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .product-box {
+    width: 48%;
+    display: inline-block;
+    margin: 1%;
+  }
+}
+
+@media (min-width: 992px) {
+  .product-box {
+    width: 30%;
+  }
+}
 
 /* Variriables */
 :root{
@@ -39,7 +82,7 @@ hr{
 }
 /* Header Styling */
 header{
-	height: 220px;
+	height: 150px;
 	background-color: var(--khaki);
 }
 header .brand{
@@ -873,7 +916,7 @@ main form.checkout-form .form-inline .form-group{
 }
 /* Content Section === Checkout Page === Order Summary */
 main .order-summary{
-	width: 30%;
+	width: 100%;
 	height: 500px;
 	padding: 5px;
 	border: 1px solid rgba(236, 240, 241,0.3);
@@ -1037,4 +1080,26 @@ main .account-page .account-detail table td{
 	padding: 8px;
 	text-align: center;
 	border: 1px solid #eee;
+}
+li a.active {
+    background-color: #455050;
+    color: white;
+}
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999; /* Чтобы быть поверх других элементов */
+  background-color: #cfcec2; /* Обязательно укажите фон */
+
+}
+main, .main-content, .container {
+  margin-top: 0px; /* подгоните под вашу высоту header'а */
+}
+.karta {
+	text-align: center;
 }

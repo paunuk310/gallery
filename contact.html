@@ -14,6 +14,7 @@
 <body>
 
 	<header>
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<div class="container">
 			<div class="brand">
 				<div class="logo">
@@ -99,7 +100,7 @@
 						<li><a href="index.html">Главная</a></li>
 						<li><a href="checkout.html">Билеты</a></li>
 						<li><a href="about.html">Компания</a></li>
-						<li><a href="contact.html">Контакты</a></li>
+						<li><a class="active" href="contact.html">Контакты</a></li>
 					</ul>
 				</div>
 				<div class="search-bar">
@@ -115,48 +116,94 @@
 
 	<div class="container">
 		<main>
-		<div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/primorskaya_gosudarstvennaya_kartinnaya_galereya/1112105062/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Приморская государственная картинная галерея</a><a href="https://yandex.ru/maps/75/vladivostok/category/museum/184105894/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Музей во Владивостоке</a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=131.882062%2C43.114365&mode=poi&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1112105062&z=17" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-		</main> <!-- Main Area -->
+		<div class="karta"  style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/primorskaya_gosudarstvennaya_kartinnaya_galereya/1112105062/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Приморская государственная картинная галерея</a><a href="https://yandex.ru/maps/75/vladivostok/category/museum/184105894/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Музей во Владивостоке</a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=131.882062%2C43.114365&mode=poi&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1112105062&z=17" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+		<h2>Контакты</h1>
+	<p>	+7 (423) 241-06-10</p>
+	<br>
+	<hr>
+	 <style>
+      
+    
+        h2 {
+            color: #333;
+        }
+        .status {
+            color: red;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .closed {
+            color: red;
+        }
+    </style>
+
+    <div class="container">
+        <h2>Время работы</h2>
+        <div class="status">Закрыто до завтра</div>
+        <table>
+            <tr><td>Понедельник</td><td class="closed">Выходной</td></tr>
+            <tr><td>Вторник</td><td>11:00–19:00</td></tr>
+            <tr><td>Среда</td><td>11:00–19:00</td></tr>
+            <tr><td>Четверг</td><td>11:00–19:00</td></tr>
+            <tr><td>Пятница</td><td>11:00–19:00</td></tr>
+            <tr><td>Суббота</td><td>11:00–19:00</td></tr>
+            <tr><td>Воскресенье</td><td>11:00–19:00</td></tr>
+        </table>
+    </div>
+	</main> <!-- Main Area -->
 	</div>
 
-	<footer>
+<footer>
 		<div class="container">
 			<div class="footer-widget">
 				<div class="widget">
 					<div class="widget-heading">
-						<h3>Основные ссылки</h3>
+					<h3>Основные ссылки</h3>
+</div>
+<div class="widget-content">
+<ul>
+<li><a href="index.html">Главная</a></li>
+<li><a href="checkout.html">Билеты</a></li>
+<li><a href="about.html">Компания</a></li>
+<li><a href="contact.html">Контакты	</a></li>
+</ul>
 					</div>
-					<div class="widget-content">
-						<ul>
-							<li><a href="index.html">Главная</a></li>
-							<li><a href="checkout.html">Билеты</a></li>
-							<li><a href="about.html">Компания</a></li>
-							<li><a href="contact.html">Контакты	</a></li>
+				</div>
+				<div class="widget">
+					<div class="widget-heading">
+						
 						</ul>
 					</div>
 				</div>
-				
-					
-				
-			
+				<div class="widget">
 					<div class="widget-heading">
-						
-					
+						<h3>Социальные сети</h3>
+					</div>
 					<div class="widget-content">
 						<div class="follow">
 							<ul>
-								
+								<li><a href="#"><img src="img/icons/facebook.png"></a></li>
+								<li><a href="#"><img src="img/icons/twitter.png"></a></li>
+								<li><a href="#"><img src="img/icons/instagram.png"></a></li>
 							</ul>
 						</div>						
 					</div>
 					<div class="widget-heading">
-						
+						<h3>Подпишитесь на рассылку новостей</h3>
 					</div>
 					<div class="widget-content">
 						<div class="subscribe">
 							<form>
 								<div class="form-group">
-								
+									<input type="text" class="form-control" name="subscribe" placeholder="Email">
+									<img src="img/icons/paper_plane.png">
 								</div>
 							</form>
 						</div>						
@@ -165,7 +212,7 @@
 			</div> <!-- Footer Widget -->
 			<div class="footer-bar">
 				<div class="copyright-text">
-					<p>Авторское право 2025 - Все права защищены</p>		
+					<p>Авторское право 2025 - Все права защищены</p>
 				</div>
 				<div class="payment-mode">
 					<img src="img/icons/paper_money.png">
