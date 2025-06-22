@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ 	<head>
+ 		<!-- Meta Tags -->
+		<meta charset="UTF-8">
+		<meta name="author" content="Kamran Mubarik">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Title -->
+ 		<title>E-Commerce Online Shop</title>
+ 		<!-- Style Sheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!-- Javascript -->	
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<!-- FancyBox -->
+		<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+
+		<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
+		<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+		<script>
+		$(document).ready(function(){		
+			$('.fancybox').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+		});	
+
+  		</script>
+ 	</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div class="brand">
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/free-icon-billboard-10434383	.png">
+						<div class="logo-text">
+							<p class="big-logo">Picture</p>
+							<p class="small-logo">Gallery</p>
+						</div>
+					</a>
+				</div> <!-- logo -->
+				<div class="shop-icon">
+					<div class="dropdown">
+						
+						<div class="dropdown-menu">
+							<ul>
+								<li><a href="account.html">My Account</a></li>
+								<li><a href="orders.html">My Orders</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="dropdown">
+						
+						<div class="dropdown-menu wishlist-item">
+							<table border="1">
+								<thead>
+									<tr>
+										<th>Image</th>
+										<th>Product Name</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="img/mona.jpg"></td>
+										<td>product name</td>
+									</tr>
+									<tr>
+										<td><img src="img/product/img2.jpg"></td>
+										<td>product name</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="dropdown">
+					
+						<div class="dropdown-menu cart-item">
+							<table border="1">
+								<thead>
+									<tr>
+										<th>Image</th>
+										<th>Product Name</th>
+										<th class="center">Price</th>
+										<th class="center">Qty.</th>
+										<th class="center">Amount</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="img/mona.jpg"></td>
+										<td>product name</td>
+										<td class="center">1200</td>
+										<td class="center">2</td>
+										<td class="center">2400</td>
+									</tr>
+									<tr>
+										<td><img src="img/product/img2.jpg"></td>
+										<td>product name</td>
+										<td class="center">1500</td>
+										<td class="center">2</td>
+										<td class="center">3000</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div> <!-- shop icons -->
+			</div> <!-- brand -->
+
+			<div class="menu-bar">
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="checkout.html">Билеты</a></li>
+						<li><a href="about.html">Компания</a></li>
+						<li><a href="contact.html">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="search-bar">
+					<form>
+
+					</form>
+				</div>
+			</div> <!-- menu -->
+		</div> <!-- container -->
+	</header> <!-- header -->
+
+	<div class="container">
+		<main>
+			
+
+			<div class="single-product">
+				<div class="images-section">
+					<div class="larg-img">
+						<img src="img/Иероним.jpg">
+					</div>
+					
+				</div> <!-- End of Images Section-->
+
+				<div class="product-detail">
+					<div class="product-name">
+						<h2>Иероним Босх</h2>
+					</div>
+					<div class="product-price">
+						<h3>Bosch, Hieronymus  (1450-1516)</h3>
+					</div>
+					<hr>
+					<div class="product-description">
+						<p>Имя Иеронима Босха прочно ассоциируется с эпохой Средневековья, со страстями, страданиями, грехами, чертями и демонами, его работы – синоним загадочности, таинственности, это удивительнейшие ребусы, познать смысл которых человечество стремится уже несколько веков. Однако жизнь самого живописца нельзя назвать бурной и полной событий.</p>
+					</div>
+				
+					<div class="product-cart">
+						<form id="cart-form">
+							
+						</form>
+						<form id="wishlist-form">
+							
+						</form>
+					</div>
+				
+					<div class="product-meta">
+
+					</div>
+				</div> <!-- End of Product Detail-->
+			</div>
+			
+			<div class="new-product-section">
+				<div class="product-section-heading">
+					<h2>Картины художника</h2>
+					<h3>Все они представлены в галереи</h3>
+				</div>
+				<div class="product-content">
+					<div class="product">
+						<a href="product.html">
+							<img src="img/EcceHomo.webp">
+						</a>
+						<div class="product-detail">
+						
+							<h2>Ecce Homo</h2>
+							<a href="checkout.html">Смотреть</a>		
+						</div>						
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/Возсена.webp">
+						</a>
+						<div class="product-detail">
+						
+							<h2>Воз сена</h2>
+								<a href="checkout.html">Смотреть</a>	
+							
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/Корабльдураков.webp">
+						</a>
+						<div class="product-detail">
+							
+							<h2>Корабль дураков</h2>
+								<a href="checkout.html">Смотреть</a>	
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/Крестныйпуть.webp">
+						</a>
+						<div class="product-detail">
+				
+							<h2>Крестный путь</h2>
+								<a href="checkout.html">Смотреть</a>	
+						</div>
+					</div>
+				</div>
+			</div> <!-- Recommend Product Section -->
+		</main> <!-- Main Area -->
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="footer-widget">
+				<div class="widget">
+					<div class="widget-heading">
+						<h3>Основные ссылки</h3>
+					</div>
+					<div class="widget-content">
+						<ul>
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="checkout.html">Билеты</a></li>
+							<li><a href="about.html">Компания</a></li>
+							<li><a href="contact.html">Контакты	</a></li>
+						</ul>
+					</div>
+				</div>
+				
+					
+				
+			
+					<div class="widget-heading">
+						
+					
+					<div class="widget-content">
+						<div class="follow">
+							<ul>
+								
+							</ul>
+						</div>						
+					</div>
+					<div class="widget-heading">
+						
+					</div>
+					<div class="widget-content">
+						<div class="subscribe">
+							<form>
+								<div class="form-group">
+								
+								</div>
+							</form>
+						</div>						
+					</div>
+				</div>
+			</div> <!-- Footer Widget -->
+			<div class="footer-bar">
+				<div class="copyright-text">
+					<p>Авторское право 2025 - Все права защищены</p>		
+				</div>
+				<div class="payment-mode">
+					<img src="img/icons/paper_money.png">
+					<img src="img/icons/visa.png">
+					<img src="img/icons/mastercard.png">
+				</div>
+			</div> <!-- Footer Bar -->
+		</div>
+	</footer> <!-- Footer Area -->
+
+</body>
+
+</html>
